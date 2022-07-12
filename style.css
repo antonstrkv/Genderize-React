@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #ada5a5;
+	background-color: rgb(52, 56, 61);
+	;
+	size: 18px;
+}
+
+.container {
+	background-color: rgb(52, 56, 61);
+	width: 1000px;
+	min-height: 230px;
+	margin: 200px auto;
+	padding: 12px 8px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+.text__hight {
+	margin: 12px 0px;
+	padding-bottom: 15px;
+	font-size: 50px;
+	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+		0px -5px 35px rgba(14, 14, 14, 0.3);
+}
+
+.notion-callout {
+	width: 410px;
+	max-height: 500px;
+	background-color: #2E3031;
+	border-radius: 5px;
+	border: 1px solid #ada5a5;
+	margin: 30px auto;
+}
+
+.notion-text {
+	max-width: 400px;
+	max-height: 500px;
+	color: #ada5a5;
+	min-height: 24px;
+	font-size: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	word-break: break-all;
+margin-left: auto;
+margin-right: auto;
+}
+
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+	color: rgb(52, 56, 61);
+	background-color: #d34444;
+	outline: 0;
+}
+
+form {
+	justify-content: center;
+	display: flex;
+	transition: all 0.2s ease;
+	margin-top: 20px;
+}
+
+form input,
+form button {
+	font-size: 25px;
+}
+
+form input {
+	width: 300px;
+	border: 1px solid #ada5a5;
+	border-radius: 5px;
+	margin-right: 10px;
+	padding: 5px 20px;
+	background-color: inherit;
+	color: #ada5a5;
+}
+
+form input::placeholder {
+	color: #ada5a5;
+}
+
+form button::placeholder {
+	color: black;
+}
+
+form button {
+	transition: all 0.2s ease;
+	font-family: Roboto, sans-serif;
+	cursor: pointer;
+	background-color: #8fa1a6;
+	border: 1px solid #8fa1a6;
+	border-radius: 5px;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	width: 100px;
+	font-weight: normal;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			color-stop(0, #5e39ae),
+			to(#ba2929)) no-repeat;
+	background: -o-linear-gradient(left, #ae3939 0, #b3454e 100%) no-repeat;
+	background: linear-gradient(to right, #ae3939 0, #b34545 100%) no-repeat;
+	border-color: #ae3939;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+
+form button:hover {
+	box-shadow: 0 8px 12px rgb(0 0 0 / 18%);
+}
